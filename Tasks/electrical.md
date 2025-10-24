@@ -1,76 +1,77 @@
-![Team Banner](/images/Team%20Banner.png)
+# ⚡ Team Prometheus — Electrical Recruitment Task 2026–27
 
-# Electrical Recruitment Task 2025-26
+Welcome to the **Electrical Team Recruitment 2026–27** for **Team Prometheus**.  
+This repository contains **two tasks** designed to evaluate your understanding of electrical engineering concepts, circuit design, and hardware integration in the context of **robotic soccer**.
 
-Welcome to the recruitment process for the RoboCup SSL Electrical team! This repository contains two tasks designed to evaluate your understanding of electrical engineering concepts, circuit design, and hardware integration in the context of robotic soccer.
+---
 
-## Task 1: Environmental Probe Development  
+## 🧩 Task 1: Balance and Motion Control System
 
-### Overview  
-In this task, you will:  
+### 🔍 Overview
+In this task, you will:
 
-- **Develop an Environmental Probe in TinkerCAD**  
-  - Use [TinkerCAD](https://www.tinkercad.com) to create a virtual environmental probe.  
-  - It is mandatory to use an **IR sensor** and a **temperature sensor** for data collection.  
-  - You are **encouraged to include additional appropriate sensors** to enhance environmental monitoring.  
-  - Code the probe using Arduino's programming language (C/C++).   
+- **Design a Balance Control Prototype** in TinkerCAD  
+  - Use an **MPU6050** to detect tilt and orientation.  
+  - Interface the sensor with an **Arduino** or **ESP32** microcontroller.  
+  - Use **servo motors** to simulate real-time balancing correction.
 
-- **Visualize and Output Data**  
-  - Implement State Indicators such as LEDs and buzzers to represent sensor readings.  
-  - Display collected environmental data on the Serial Monitor for real-time observation.  
+- **Implement Feedback & Safety Indicators**  
+  - Use **LEDs** or a **buzzer** to indicate loss of balance or error states.  
+  - Display real-time sensor readings (angles or acceleration) on the **Serial Monitor**.
 
-### Clarification  
-An Environmental Probe is a device designed to collect atmospheric data from its surroundings. It gathers essential information needed to evaluate conditions for sustaining life in different environments.  
+### 💡 Clarification
+A **Balance and Motion Control System** is crucial in humanoid robots to help them remain upright and recover from disturbances — similar to how humans adjust their body posture.
 
-### Deliverables  
-- A complete TinkerCAD circuit design with multiple sensors and indicators.  
-- Code implementation in the TinkerCAD simulation environment.  
-- A detailed documentation report including:  
-  - **Why you chose each sensor** and its relevance to environmental monitoring.  
-  - **How the data is processed and interpreted**.  
-  - **The significance of the collected data** in assessing environmental conditions.  
-  - **This documentation should clearly explain the purpose of each component and its role in the overall system.**  
+### 📦 Deliverables
+- A **TinkerCAD** simulation showing active balance correction using feedback control.  
+- **Arduino implementation** of sensor-based motion correction.  
+- A **report** including:
+  - Component justification (e.g., why MPU6050, why servos, etc.)  
+  - Control logic explanation (how tilt translates to motor correction)  
+  - Relevance of the system in humanoid soccer applications  
 
+---
 
+## 🔋 Task 2: Power and Sensor Management PCB
 
-## Task 2: Single-Layer PCB Design  
+### 🔍 Overview
+In this task, you will:
 
-### Overview  
-In this task, you will:  
+- **Design a Single-Layer PCB** for Power Distribution and Sensor Integration  
+  - Include a **microcontroller (ESP32)**  
+  - Add ports for **sensors** (MPU6050, ultrasonic, temperature) and **servo outputs**  
+  - Implement **voltage regulation (LM7805)**  
+  - Use **diagnostic LEDs** to indicate power and signal status.
 
-- **Design a Single-Layer PCB**  
-  - Use **KiCad, Eagle, or any PCB design tool** to create a **compact and functional PCB**.  
-  - Integrate a **microcontroller (ESP32, Arduino, or ATmega328)** with essential components.  
-  - Ensure proper **trace routing, power distribution, and component placement**.  
+### 🎯 Focus Areas
+- Clean and compact routing suitable for a humanoid robot’s constrained structure.  
+- Stable power delivery and minimal electrical noise.  
+- Expandability for future sensor or actuator modules.  
 
-- **Implement an Environmental Sensor Interface**  
-  - Include a **temperature sensor (LM35 or DHT11)** to collect environmental data.  
-  - Add **State Indicators** such as LEDs or buzzers to visualize sensor readings.  
-  - Connect components efficiently while maintaining a **clean PCB layout**.  
+### 💡 Clarification
+Your PCB should act as a **central hub** connecting the robot’s sensors, actuators, and control unit — think of it as the **“nervous system”** of your humanoid robot.
 
-### Clarification  
-A **Single-Layer PCB** is a printed circuit board with conductive traces on only one side. The goal is to create a **functional and well-structured PCB** while ensuring **optimal component placement and routing efficiency**.  
+### 📦 Deliverables
+- **Schematic and PCB layout** (KiCad, Eagle, or Altium).  
+- **Gerber files** ready for fabrication(optional).  
+- A **report** detailing:
+  - Design reasoning and component selection.  
+  - PCB layout strategy (trace routing, decoupling, ground plane usage).  
+  - Challenges faced and how they were resolved.  
 
-### Deliverables  
-- A **fully designed PCB layout** in **KiCad, Eagle, or any preferred PCB design software**.  
-- **Schematic diagram** showing the circuit connections.  
-- **Exported Gerber files** ready for fabrication.  
-- A **detailed documentation report** including:  
-  - **Why you selected each component** and its role in the circuit.  
-  - **How the PCB layout was optimized** for performance and space efficiency.  
-  - **Challenges faced and how they were addressed** in the design.  
-  - **This documentation should clearly explain the purpose of each component and its role in the overall system.**  
+---
 
+## 📘 Summary
+| Task | Description | Tools | Key Deliverables |
+|------|--------------|--------|------------------|
+| **Task 1** | Balance and Motion Control | TinkerCAD, Arduino/ESP32 | Simulation, Code, Report |
+| **Task 2** | Power & Sensor Management PCB | KiCad/Eagle/Altium | Schematic, PCB, Gerber, Report |
 
-## Resources
-- [RoboCup SSL Official Repository](https://github.com/RoboCup-SSL)
-- Free tools: [TinkerCAD](https://www.tinkercad.com), [KiCad](https://downloads.kicad.org/kicad/)
-- [RoboCup SSL Rules](https://ssl.robocup.org/rules/)
+---
 
-## Notes
-- We prioritize practical knowledge and problem-solving approach over expensive equipment
-- Creative solutions within constraints are highly valued
-- Demonstrate your understanding of electrical engineering principles
-- Show your ability to design systems that integrate with the larger robotic platform
+### 🧠 Note
+> Ensure all your files are **clearly named**, your **simulation links are accessible**, and your **report is concise yet descriptive**.
 
-Good luck with your submission! If you have any questions, please reach out through the appropriate channels.
+---
+
+**Team Prometheus — Electrical Recruitment Task 2026–27**

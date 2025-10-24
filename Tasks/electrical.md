@@ -1,3 +1,5 @@
+![Team Banner](/images/Team%20Banner.png)
+
 # ⚡ Team Prometheus — Electrical Recruitment Task 2026–27
 
 Welcome to the **Electrical Team Recruitment 2026–27** for **Team Prometheus**.  
